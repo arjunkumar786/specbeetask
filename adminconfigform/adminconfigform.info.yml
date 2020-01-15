@@ -1,0 +1,5 @@
+name: Custom Admin Configuration Form
+type: module
+description: "Custom admin configuration form to display dynamic timezome."
+core: 8.x
+package: Custom

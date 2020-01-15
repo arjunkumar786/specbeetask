@@ -1,0 +1,3 @@
+services:
+  adminconfigform.timezone_service:
+    class: Drupal\adminconfigform\TimeZoneServices

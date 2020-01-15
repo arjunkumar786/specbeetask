@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function adminconfigform_theme() {
+	return [
+		'adminconfigform' => [
+			'variables' => ['title' => NULL, 'city' => NULL, 'timezone' => NULL],
+			'template' => 'block--timezone',
+		],
+	];
+}
