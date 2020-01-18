@@ -14,8 +14,30 @@ class TimeZoneServices {
   	$this->timezone = \Drupal::config('timezoneform.adminsettings');
 	}
 	
+	/**
+   * @function return Country.
+   *
+   */
+	public function getCountry(){
+		return $this->timezone->get('country');
+	}
+	
+	/**
+   * @function return City.
+   *
+   */
+	public function getCity(){
+		return $this->timezone->get('city');
+	}
+	
+	/**
+	 *@function return current date-time.
+   *
+   */
 	public function getTimzonesetting(){
 		$date = new \DateTime("now", new \DateTimeZone($this->timezone->get('timezone')));
 		return $date->format("jS M Y - H:i zA");
 	}
+	
+	
 }

@@ -55,10 +55,13 @@ class TimezoneBlock extends BlockBase implements ContainerFactoryPluginInterface
    */
   public function build() {
 		$date = $this->timezone->getTimzonesetting();
+		$country = $this->timezone->getCountry();
+		$city = $this->timezone->getCity();
     return [
     	'#theme' => 'adminconfigform',
-			'#title' => $date,
-			'#description' => 'Websolutions Agency is the industry leading Drupal development agency in Croatia'
+			'#country' => $country,
+			'#city' => $city,
+			'#timezone' => $date
     ];
   }
 }

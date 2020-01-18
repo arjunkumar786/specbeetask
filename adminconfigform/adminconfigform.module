@@ -6,7 +6,7 @@
 function adminconfigform_theme() {
 	return [
 		'adminconfigform' => [
-			'variables' => ['title' => NULL, 'city' => NULL, 'timezone' => NULL],
+			'variables' => ['country' => NULL, 'city' => NULL, 'timezone' => NULL],
 			'template' => 'block--timezone',
 		],
 	];
