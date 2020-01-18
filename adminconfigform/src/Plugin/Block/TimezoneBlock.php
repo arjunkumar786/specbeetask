@@ -69,4 +69,11 @@ class TimezoneBlock extends BlockBase implements ContainerFactoryPluginInterface
     ];
   }
 	
+	/**
+   * {@inheritdoc}
+   */
+  public function getCacheTags() {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    return Cache::mergeTags(parent::getCacheTags(), ['config:'.$timezone]);
+  }
 }
