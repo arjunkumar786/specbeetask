@@ -50,14 +50,14 @@ class TimezoneForm extends ConfigFormBase {
     	'#description' => 'Select timezone.',
 			'#default_value' => $config->get('timezone'),
     	'#options' => [
-				'america/chicago' => $this->t('America/Chicago'),
-				'america/newyork' => $this->t('America/New York'),
-				'asia/tokyo' => $this->t('Asia/Tokyo'),
-				'asia/dubai' => $this->t('Asia/Dubai'),
-				'asia/kolkata' => $this->t('Asia/Kolkata'),
-				'europe/amsterdam' => $this->t('Europe/Amsterdam'),
-				'europe/oslo' => $this->t('Europe/Oslo'),
-				'europe/london' => $this->t('Europe/London')
+				'America/Chicago' => $this->t('America/Chicago'),
+				'America/New_York' => $this->t('America/New_York'),
+				'Asia/Tokyo' => $this->t('Asia/Tokyo'),
+				'Asia/Dubai' => $this->t('Asia/Dubai'),
+				'Asia/Kolkata' => $this->t('Asia/Kolkata'),
+				'Europe/Amsterdam' => $this->t('Europe/Amsterdam'),
+				'Europe/Oslo' => $this->t('Europe/Oslo'),
+				'Europe/London' => $this->t('Europe/London')
     	],
 			
   	];
